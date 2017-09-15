@@ -1,0 +1,56 @@
+<!--pages/stu/stu.wxml-->
+<import src="/tpl/tpl.wxml" />
+<view class="weui-cells">
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd headbox">
+      <block wx:if="{{userInfo.avatarUrl}}">
+        <image src='{{userInfo.avatarUrl}}'></image>
+      </block>
+    </view>
+    <view class="weui-cell__bd">
+      <view class="nickname">{{userInfo.nickName}}</view>
+    </view>
+    <button hidden="{{userInfo}}" open-type='getUserInfo' bindgetuserinfo='getUserInfo' class='weui-cell__ft weui-cell__ft_in-access'>点击授权登录</button>
+  </view>
+</view>
+
+<view bindtap='inCard' class="weui-cells" hover-class="weui-cell_active">
+  <view class="weui-cell">
+    <view class="weui-cell__hd"></view>
+    <view class="weui-cell__bd">绑定学籍身份</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>
+
+<view class="weui-cells">
+  <view class="weui-cell" hover-class="weui-cell_active" data-type='1' bindtap='inList'>
+    <view class="weui-cell__hd"></view>
+    <view class="weui-cell__bd">G3成绩清单</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view class="weui-cell" hover-class="weui-cell_active" data-type='2' bindtap='inList'>
+    <view class="weui-cell__hd"></view>
+    <view class="weui-cell__bd">创新学分清单</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>
+
+<navigator url='../version/version' class="weui-cells" hover-class="weui-cell_active">
+  <view class="weui-cell">
+    <view class="weui-cell__hd"></view>
+    <view class="weui-cell__bd">更新日志</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</navigator>
+
+<navigator url='../about/about' class="weui-cells" hover-class="weui-cell_active">
+  <view class="weui-cell">
+    <view class="weui-cell__hd"></view>
+    <view class="weui-cell__bd">关于能动助手</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</navigator>
+
+<view class='contact-area'>
+    <template is="contact"></template>
+</view>

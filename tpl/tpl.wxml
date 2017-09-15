@@ -1,0 +1,14 @@
+<!-- 页脚 -->
+<template name="footer">
+<view class="weui-footer">
+    <view class="weui-footer__links">
+        <view class="weui-footer__link">能动助手</view>
+    </view>
+    <view class="weui-footer__text">Copyright © 2017 能源与动力工程学院</view>
+</view>
+</template>
+
+
+<template name="contact">
+  <button open-type='contact' class='contact layui-icon layui-icon-kf'></button>
+</template>

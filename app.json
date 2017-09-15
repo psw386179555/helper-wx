@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/stu/stu",
+    "pages/about/about",
+    "pages/apply/apply",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/version/version",
+    "pages/say/say",
+    "pages/health/health",
+    "pages/data/data",    
+    "pages/card/card"    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "能动助手",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f9f9f9"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/style/image/index.png",
+        "selectedIconPath": "/style/image/index-s.png"
+      },
+      {
+        "pagePath": "pages/say/say",
+        "text": "我想说",
+        "iconPath": "/style/image/say.png",
+        "selectedIconPath": "/style/image/say-s.png"
+      },
+      {
+        "pagePath": "pages/stu/stu",
+        "text": "我",
+        "iconPath": "/style/image/stu.png",
+        "selectedIconPath": "/style/image/stu-s.png"
+      }
+    ],
+    "color": "#707070",
+    "selectedColor": "#1AAD19",
+    "backgroundColor": "#f3f3f3",
+    "borderStyle": "black",
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

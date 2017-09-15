@@ -1,0 +1,13 @@
+/* pages/say/say.wxss */
+.layui-icon-msg{ 
+  margin-top: -10rpx;
+  font-size: 32rpx!important;
+  color:grey;
+}
+.time{
+  font-size:28rpx;
+  color: gray;
+}
+.zan-cell::after{
+  border: none!important;
+}

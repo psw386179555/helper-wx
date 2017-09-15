@@ -1,0 +1,8 @@
+/* pages/health/health.wxss */
+.time{
+  margin-top:20rpx; 
+}
+.classPicker picker{
+  float:left;
+  width:50%; 
+}

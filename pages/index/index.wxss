@@ -1,0 +1,83 @@
+/**index.wxss**/
+swiper{
+  height: 400rpx;
+}
+swiper-item{
+  width: 100%
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.btnGroup{
+  display: flex;
+  flex-direction: row;
+  text-align: center; 
+  flex-wrap: wrap;
+}
+
+.btnGroup>view{
+  flex: 1;
+  padding:40rpx 0rpx;
+  border-bottom: 2rpx solid #e7e7eb;
+  position: relative;
+}
+.btnGroup>view image{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:80rpx;
+  height: 80rpx;
+}
+.btnGroup>view:nth-child(1)
+{
+  border-right: 2rpx solid #e7e7eb;
+}
+.btnGroup>view:nth-child(2)
+{
+  border-right: 2rpx solid #e7e7eb;
+}
+
+
+.btnGroup view view{
+  font-size: 16px;
+}
+
+.layui-icon-report{
+  color: red;
+  font-size: 48rpx!important;
+}
+
+.layui-icon-more{
+  color: green;
+  font-size: 48rpx!important;
+}
+
+.layui-icon-volunteer{
+  color:#F96D00;
+  font-size: 48rpx!important;
+}
+.layui-icon-grade{
+  color:#1296db;
+  font-size: 48rpx!important;
+}
+
+.layui-icon-G3{
+  color:#1AAD19;
+  font-size: 48rpx!important;
+}
+
+.layui-icon-star{
+  color:#FFAF00;
+  font-size: 48rpx!important;
+}
+
+
+.cannot{
+  color: gray!important;
+}
+
+.cannot>view{
+  color: gray!important;
+}
+

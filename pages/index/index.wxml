@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<import src="/tpl/tpl.wxml" />
+<view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="unique">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<view class='btnGroup'>
+    <view data-type='1' class='cannot' bindtap='inFunction' hover-class="weui-cell_active">
+        <view class="layui-icon layui-icon-G3"></view>
+        <view>G3成绩申请</view>
+    </view>
+    <view data-type='2' class='cannot' bindtap='inFunction' hover-class="weui-cell_active">        
+         <view class="layui-icon layui-icon-grade"></view>
+        <view>创新学分申请</view>
+    </view>
+
+    <view data-type='3' bindtap='inFunction' hover-class="weui-cell_active">
+        <image src='/style/image/new.png'></image>
+        <view class="layui-icon layui-icon-report"></view>
+        <view>宿舍卫生查询</view>
+    </view>
+</view>
+
+<view class='btnGroup'>
+    <view data-type='4' bindtap='inFunction' class='cannot' hover-class="weui-cell_active">
+        <view class="layui-icon layui-icon-volunteer"></view>
+        <view>志愿服务</view>
+    </view>
+    <view data-type='5' bindtap='inFunction' class='cannot' hover-class="weui-cell_active">
+        <view class="layui-icon layui-icon-star"></view>
+        <view>周恩来班评选</view>
+    </view>
+
+    <view data-type='6' bindtap='inFunction' hover-class="weui-cell_active">
+        <view class="layui-icon layui-icon-more"></view>
+        <view>更多功能</view>
+    </view>
+</view>
+<!-- <view class='line'></view> -->
+
+
+<!-- <view class="zan-panel">
+    <navigator wx:for="{{notice}}" wx:key="unique" url="../detail/detail?id={{item.id}}" class="zan-cell zan-cell--access">
+        <view class="zan-cell__bd">{{item.title}}</view>
+        <view class="zan-cell__ft">{{item.author}}</view>
+    </navigator>
+</view> -->
+
+
+<view class='footer-area'>
+    <template is="footer"></template>
+</view>
+<view class='contact-area'>
+    <template is="contact"></template>
+</view>

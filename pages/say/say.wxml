@@ -1,0 +1,49 @@
+<!--pages/say/say.wxml-->
+<!--pages/version/version.wxml-->
+<import src="/tpl/tpl.wxml" />
+<view class='head'>
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <view class="layui-icon layui-icon-msg weui-icon-search_in-box "></view>
+        <input type="text" class="weui-search-bar__input" placeholder="吐糟、表白、发泄..." value='{{inputVal}}' focus="{{inputShowed}}" bindinput="inputTyping" />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+    </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="submit">我想说</view>
+  </view>
+</view>
+<block wx:if="{{say.length!=0}}">
+  <view class="zan-cell">
+    <view class="zan-cell__bd">
+      <view class="zan-steps zan-steps--vsteps" wx:for="{{say}}" wx:key="unique">
+        <view class="zan-steps__step zan-steps__step--done">
+          <view class="zan-steps__title">{{item.user.nickname}}</view>
+          <view class="zan-steps__title time">{{item.create_time}}</view>
+          <view class="zan-steps__content">{{item.content}}</view>
+          <view class="zan-steps__icons">
+            <view class="zan-steps__circle">
+            </view>
+          </view>
+          <view class="zan-steps__line"></view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="weui-loadmore weui-loadmore_line">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+  </view>
+</block>
+
+<view class='footer-area'>
+  <template is="footer"></template>
+</view>
+
+<view class='contact-area'>
+    <template is="contact"></template>
+</view>

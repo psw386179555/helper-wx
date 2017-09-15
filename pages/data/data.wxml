@@ -1,0 +1,9 @@
+<!--pages/data/data.wxml-->
+<view class="container">
+	<view class="title">
+		<view wx:if="{{!isMainChartDisplay}}" class="back-btn" bindtap="backToMainChart">返回</view>
+		{{chartTitle}}
+	</view>
+    <canvas canvas-id="columnCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+        <view class="weui-cells__tips">{{classInfo}}</view>
+</view>

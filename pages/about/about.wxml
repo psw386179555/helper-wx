@@ -1,0 +1,14 @@
+<!--pages/about/about.wxml-->
+<import src="/tpl/tpl.wxml"/>
+<view class="container">
+	<view class="logo">
+      <view><span class='layui-icon layui-icon-helper'></span></view>      	
+		  <view>Version 1.2</view>
+	</view>
+	<view class="introduce">
+能动助手小程序是处理江苏大学能源与动力工程学院团学事务的小程序，旨在借助互联网技术，实现各项团学事务的便捷化和简洁化，提高团学工作效率。
+	</view>
+	<view class="support"><text class='layui-icon layui-icon-my'></text>开发者：彭思文
+	<view>www.svenbarnett.cn</view></view>	
+</view>
+<template is="footer"></template>

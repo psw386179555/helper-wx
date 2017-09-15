@@ -1,0 +1,46 @@
+/* pages/about/about.wxss */
+/* pages/member/about/about.wxss */
+.container{
+	color: #8c8c8c;
+	font-size: 16px;
+	position: relative;
+}
+.container view{
+	display:flex;
+	flex-direction: column;
+	justify-content: middle;
+}
+.logo{
+  text-align: center;
+  padding-top: 30rpx;
+  
+ 
+}
+.layui-icon-helper{
+  font-size: 200rpx;
+  color: green;
+  margin-right: 150rpx;
+}
+.introduce{
+	margin-top: 50rpx;
+	text-align: center;
+	text-indent: 2em;
+	padding: 0rpx 50rpx;
+}
+.support{
+	text-align: center;
+	margin-top: 100rpx;
+	font-size: 12px;
+}
+.weui-footer{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-bottom: 20rpx;
+}
+
+.layui-icon-my{
+  font-size: 54rpx;
+  color: #F9B248;
+}

@@ -1,0 +1,31 @@
+/**app.wxss**/
+@import "/style/zanui/index.wxss";
+@import "/style/weui/weui.wxss";
+@import "/style/fonts/fonts.wxss";
+page {
+  background-color: #f9f9f9;
+}
+.footer-area{
+  padding: 40rpx 0rpx;
+  padding-top: 50rpx;
+}
+.contact-area{
+  position: fixed;
+  right: 20rpx;
+  top:900rpx;
+  z-index: 10;
+}
+
+.contact{
+  border-radius: 50%;
+  background-color:#415B90;
+  opacity: 0.8;
+  line-height: 2.5em;
+  width: 2.5em;
+ 
+}
+.layui-icon-kf{
+  font-size: 48rpx!important;
+  font-weight: bold;
+  color: #F9F9F9;  
+}

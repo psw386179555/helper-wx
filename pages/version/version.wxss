@@ -1,0 +1,17 @@
+/* pages/version/version.wxss */
+.head{
+  width: 100%;
+  height: 400rpx;
+  background-color: #5782BB;
+}
+.logo{
+  padding-right: 150rpx;
+  text-align: center;
+  vertical-align: middle;
+}
+.layui-icon-helper{
+  font-size: 250rpx;
+}
+.zan-cell::after{
+  border: none!important;
+}
